@@ -1,0 +1,9 @@
+# Pasta de saída da compilação
+/out/
+
+# Arquivos e pastas do IntelliJ IDEA
+.idea/
+*.iml
+
+# Outros comuns
+*.class
