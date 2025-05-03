@@ -3,8 +3,6 @@ package ListaCesar.exercicios;
 import java.util.*;
 //import ListaCesar.modelos.;
 
-
-
 public class Ex13 {
 
     public static class Numero{
