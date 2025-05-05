@@ -1,4 +1,4 @@
-package aplicação;
+package ListaCesar.exercicios;
 
 import java.util.*;
 
@@ -31,12 +31,8 @@ public class Ex17 {
 			return real;
 		}
 		
-		public String verifIntervalo() {
-			if(real>a && real<b) {
-				return "O número "+real+" pertence ao intervalo ["+a+" ; "+b+"]";
-			}else {
-				return "O número "+real+" não pertence ao intervalo ["+a+" ; "+b+"]";
-			}
+		public boolean verifIntervalo() {
+			return real>a && real<b;
 		}
 		
 	}
@@ -54,7 +50,11 @@ public class Ex17 {
 		System.out.println("DIGITE UM NUMERO REAL: ");
 		numeros.setReal(sc.nextDouble());
 		
-		System.out.println(numeros.verifIntervalo());
+		if(numeros.verifIntervalo()){
+			System.out.println("O número "+numeros.real+" pertence ao intervalo ["+numeros.a+" ; "+numeros.b+"]");
+		}else{
+			System.out.println("O número "+numeros.real+" não pertence ao intervalo ["+numeros.a+" ; "+numeros.b+"]");
+		}
 		
 		sc.close();
 	}

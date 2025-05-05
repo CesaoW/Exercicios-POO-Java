@@ -1,4 +1,4 @@
-package aplicação;
+package ListaCesar.exercicios;
 
 import java.util.Scanner;
 
@@ -10,6 +10,7 @@ public class Ex19 {
 		for(int i = 100; i>=1; i--) {
 			System.out.println(i);
 		}
+		sc.close();
 	}
 
 }
